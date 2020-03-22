@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Body temperature</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<header>
+    <nav>
+        <a th:href="@{/index}">Home</a>
+        <a th:href="@{/contact}">Contact and questions</a>
+        <a th:href="@{/about}">About us</a>
+        <a class="active" th:href="@{/temperature}">Submit your temperature</a>
+    </nav>
+</header>
+<main>
+    <div>
+        <h1>Thermometer</h1>
+        <form method="post" th:action="@{temperature}">
+        <label>Please enter your temperature:</label>
+        <input type = "number" step="0.1" id = "temp" name = "temp"/>
+        <button type = "submit">Submit</button>
+        </form>
+     </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>

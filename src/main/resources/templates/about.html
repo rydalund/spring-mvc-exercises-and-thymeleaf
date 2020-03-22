@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About us</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<header>
+    <nav>
+        <a th:href="@{/index}">Home</a>
+        <a th:href="@{/contact}">Contact and questions</a>
+        <a class="active" th:href="@{/about}">About us</a>
+        <a th:href="@{/temperature}">Submit your temperature</a>
+    </nav>
+</header>
+<main>
+    <div>
+        <img id="under-construction" th:src="@{/img/under-construction.png}" width="500px" alt="Under construction"/>
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+* {
+    font-family: "Lucida Handwriting";
+}
+
+body {
+    background-color: grey;
+}
+nav{
+    padding: 1em;
+    font-size: 1.5vw;
+}
+
+nav a{
+    text-decoration: none;
+    color: darkgray;
+    margin-left: 1em;
+}
+
+nav a:hover{
+    color: black;
+    opacity: 0.5;
+}
+
+.active{
+    color: lightgray;
+}
+
+#under-construction{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<header>
+    <nav>
+        <a th:href="@{/index}">Home</a>
+        <a class="active" th:href="@{/contact}">Contact and questions</a>
+        <a th:href="@{/about}">About us</a>
+        <a th:href="@{/temperature}">Submit your temperature</a>
+    </nav>
+</header>
+<main>
+    <div>
+        <h1>Contact form</h1>
+        <form method="post" th:action="@{contact}">
+            <input type = "text" id = "input" name = "input" placeholder = "Please add your input..."/>
+            <button type = "submit">Submit</button>
+        </form>
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
